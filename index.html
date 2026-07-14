@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecasting App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <main class="weather-background">
+        <section class="weather-card">
+            <div class="top">
+                <button id="switch-degree">℃</button>
+                <div class="search-bar">
+                    <input type="text" id="search-input" name="search-input" placeholder="Location...">
+                    <button id="search">Search</button>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="weather-dets">
+                    <div class="top-left">
+                        <h2 class="temp">21°</h2>
+                        <span>Feels like 21°</span>
+                    </div>
+                    <div class="icon">🌧️</div>
+                    <div class="top-right">
+                        <h3 class="weather-status">Rain, Partially Cloudy</h3>
+                        <h2 class="place">Uran</h2>
+                        <p class="region">Asia/Kolkata</p>
+                    </div>
+                </div>
+                <div class="minor-dets">
+                    <div>
+                        <h4>Wind</h4>
+                        <span>12.1 km/h</span>
+                    </div>
+                    <div>
+                        <h4>Wind</h4>
+                        <span>12.1 km/h</span>
+                    </div>
+                    <div>
+                        <h4>Wind</h4>
+                        <span>12.1 km/h</span>
+                    </div>
+                    <div>
+                        <h4>Wind</h4>
+                        <span>12.1 km/h</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="forecasting-panel">
+            <h2>7 Days Forecast</h2>
+            <div class="forecast-card">
+                <div>
+                    <p>July 15</p>
+                    <span>🌧️</span>
+                </div>
+                <div class="day-temp">29° / 28°</div>
+            </div>
+        </aside>
+    </main>
     <script src="script.js"></script>
 </body>
+
 </html>
