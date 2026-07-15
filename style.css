@@ -75,6 +75,11 @@ aside.forecasting-panel {
     margin-bottom: var(--spacing-2xl);
 }
 
+.search-bar {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
 .search-bar input,
 button {
     font-size: var(--size-md);
@@ -147,13 +152,179 @@ aside.forecasting-panel h2 {
     margin-bottom: var(--spacing-lg);
 }
 
-.forecast-card div:first-child {
+.forecast-card div {
     display: flex;
     justify-content: space-between;
+}
+
+.forecast-card div:first-child {
     margin-bottom: var(--spacing-xs);
 }
 
-.day-temp {
-    display: flex;
-    justify-content: space-between;
+@media (max-width: 1025px) {
+    main.weather-background {
+        gap: 0;
+    }
+
+    .weather-dashboard {
+        width: 70%;
+    }
+
+    aside.forecasting-panel {
+        width: 30%;
+    }
+
+    .search-bar input,
+    button {
+        padding: var(--spacing-sm) var(--spacing-md);
+        border-radius: var(--radius-md);
+    }
+
+    .search-bar input {
+        padding: var(--spacing-sm);
+    }
+
+    .weather-dets {
+        gap: var(--spacing-md);
+    }
+
+    .icon {
+        font-size: var(--size-7xl);
+    }
+
+    .top-left h2 {
+        font-size: var(--size-6xl);
+    }
+
+    .info h2.place {
+        font-size: var(--size-2xl);
+    }
+
+    .bottom .other-dets {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        gap: 10px;
+    }
+
+    .other-dets div {
+        text-align: center;
+    }
+
+    aside.forecasting-panel h2 {
+        text-align: center;
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 769px) {
+    .search-bar input {
+        width: 150px;
+    }
+
+    .weather-card {
+        padding: var(--spacing-lg);
+        border-radius: var(--radius-xl);
+    }
+
+    aside.forecasting-panel {
+        padding: var(--spacing-sm);
+    }
+
+    .top,
+    .bottom .weather-dets,
+    .bottom .other-dets {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .weather-dets {
+        flex-direction: column;
+    }
+
+    .bottom .other-dets {
+        gap: 6px;
+    }
+
+    .other-dets div {
+        width: 49%;
+    }
+
+    aside.forecasting-panel h2 {
+        text-align: center;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .forecast-card p,
+    .day-temp {
+        font-size: var(--size-md);
+    }
+}
+
+@media (max-width: 426px) {
+    main.weather-background {
+        flex-direction: column;
+    }
+
+    .weather-dashboard {
+        width: 100%;
+        padding: var(--spacing-md);
+    }
+
+    .weather-card {
+        width: 100%;
+        padding: var(--spacing-sm);
+        border-radius: var(--radius-lg);
+    }
+
+    aside.forecasting-panel {
+        width: 100%;
+        border-top-left-radius: var(--radius-xl);
+        border-top-right-radius: var(--radius-xl)
+    }
+
+    .top,
+    .bottom .weather-dets,
+    .bottom .other-dets {
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .weather-dets {
+        gap: var(--spacing-sm);
+    }
+
+    .top-left h2 {
+        font-size: var(--size-8xl);
+    }
+
+    .info h2.place {
+        font-size: var(--size-3xl);
+    }
+
+    .icon {
+        font-size: var(--size-8xl);
+    }
+
+    .other-dets div {
+        padding: var(--spacing-sm);
+        border-radius: var(--radius-md);
+        font-size: var(--size-md);
+    }
+
+    .forecast-card {
+        font-size: var(--size-lg);
+        padding: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    aside.forecasting-panel h2 {
+        text-align: center;
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 360px) {
+
+    .other-dets div,
+    .forecast-card {
+        width: 100%;
+    }
 }

@@ -8,10 +8,13 @@ const forecastingPanelContainer = document.querySelector(
 );
 
 const uiElements = {
-  "Partially cloudy": ['<i class="ri-sun-cloudy-fill"></i>', "--rainy-weather"],
+  "Partially cloudy": [
+    '<i class="ri-sun-cloudy-fill"></i>',
+    "--partially-cloud-weather",
+  ],
   "Rain, Partially cloudy": [
     '<i class="ri-rainy-fill"></i>',
-    "--partially-cloud-weather",
+    "--rainy-weather",
   ],
   "Rain, Overcast": ['<i class="ri-rainy-fill"></i>', "--rainy-weather"],
   Clear: ['<i class="ri-sun-fill"></i>', "--clear-weather"],

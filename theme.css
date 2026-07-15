@@ -29,6 +29,9 @@
     --size-2xl: 32px;
     --size-3xl: 40px;
     --size-4xl: 48px;
+    --size-5xl: 64px;
+    --size-6xl: 80px;
+    --size-7xl: 88px;
     --size-8xl: 96px;
 
     --clear-weather: url("./assets/images/clear.jpg");
