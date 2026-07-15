@@ -16,7 +16,7 @@ body {
 
 main.weather-background {
     min-height: 100vh;
-    background: var(--partially-cloud-weather);
+    background: var(--bg-primary-color);
     background-size: cover;
     display: flex;
     gap: 20px;
@@ -48,8 +48,15 @@ main.weather-background {
 
 .weather-card {
     width: 100%;
+    min-height: 400px;
     padding: var(--spacing-2xl);
     border-radius: var(--radius-2xl);
+}
+
+.loading-screen {
+    margin-top: var(--spacing-3xl);
+    font-size: var(--size-3xl);
+    text-align: center;
 }
 
 aside.forecasting-panel {
@@ -106,6 +113,7 @@ button {
 }
 
 .info h2.place {
+    text-transform: capitalize;
     font-size: var(--size-3xl);
 }
 
@@ -143,4 +151,9 @@ aside.forecasting-panel h2 {
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--spacing-xs);
+}
+
+.day-temp {
+    display: flex;
+    justify-content: space-between;
 }
